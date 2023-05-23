@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+    <div class="contant w-75 mx-4 py-5">
+        <h1>Welcome To Your System
+        </h1>
+        <form action="#">
+            <div class="box">
+                <label for="p-name">producte name</label>
+                <input type="text" id="p-name" class="form-control">
+            </div>
+            <div class="box">
+                <label for="p-price">producte price</label>
+                <input type="number" id="p-price" class="form-control">
+            </div>
+            <div class="box">
+                <label for="p-category">producte category</label>
+                <input type="text" id="p-category" class="form-control">
+            </div>
+            <div class="box">
+                <label for="p-dec">producte descrption</label>
+                <input type="text" id="p-dec" class="form-control">
+            </div>
+            <button id="mainbtn" onclick="addproudect();" class="btn-outline-info btn mt-4  w-25">add proudect</button>
+        </form>
+
+    </div>
+    <div class="w-75 m-auto py-4">
+        <input onkeyup="searchproduct(this.value)" type="search" class="form-control my-3 w-75" placeholder="search...">
+
+        <table class="table my-5">
+            <thead>
+                <th>index</th>
+                <th>producte name</th>
+                <th>producte price</th>
+                <th>producte category</th>
+                <th>producte dec</th>
+                <th>update</th>
+                <th>delete</th>
+
+            </thead>
+            <tbody id="t-body">
+              
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
